@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // datatypes in js->
+    // 1- number - 56,78.9 
+    //2-string- "hello" ,"456","@"
+    // 3-boolean- true false
+    //4-null
+    //5-undefined
+
+    // varibale declration
+    // var num;-undefined
+    // var num=null
+    // var num=50;
+    // var num="sony"
+    // var num=true
+
+    // difference between var,let,const kyeword
+
+    //var keyword- functional scoped
+    // var a = 60;
+    // var a=77
+    // var b = 30;
+    // if (a > b) {
+    //   var a = 80
+    //   var b = 555
+    //   document.write(a+"<br/>");//80
+    //   document.write(b)//555
+    // }
+
+    // document.write(a);//80
+    // document.write(b)//555
+
+    //let keyword-blocked scoped
+    // let a = 60;
+    // let a=22;-error
+    // let b = 30;
+    // if (a > b) {
+    //   let a = 80
+    //   let b = 555
+    //   document.write(a+"<br/>");//80
+    //   document.write(b)//555
+    // }
+
+    // document.write(a);//60
+    // document.write(b)//30
+
+    //const-keyword
+    const a = 60;
+    // const a=55;-error
+    const b = 30;
+    if (a > b) {
+      const a = 80
+      const b = 555
+      document.write(a + "<br/>");//80
+      document.write(b)//555
+    }
+
+    document.write(a);//60
+    document.write(b)//30
+
+
+
+
+
+  </script>
+</body>
+
+</html>
