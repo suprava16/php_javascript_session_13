@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Login form</h1>
+
+  <input type="text" placeholder="enter password" id="input-data">
+  <span id="error" style="color: red;"></span>
+  <button onclick="handleClick()">LOGIN</button>
+
+  <script>
+    function handleClick(){
+
+      var pass=document.getElementById("input-data").value
+      var reg=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{5,18}$/;
+      if(pass.match(reg)){
+        alert("password is correct")
+        return true;
+      }
+      else{
+        document.getElementById("error").innerHTML="password format must be like Ab@1... and length in between 5-18";
+      return false
+      }
+    }
+  </script>
+</body>
+</html>
